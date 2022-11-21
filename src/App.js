@@ -22,7 +22,6 @@ export default () => {
       <div ref={quillRef}  />
     </div>
     <div className="print" dangerouslySetInnerHTML={{ __html: value }}></div>
-
    </div>
   );
 };
