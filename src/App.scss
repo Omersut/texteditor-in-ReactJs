@@ -5,6 +5,8 @@
 
 .ql-toolbar {
   &.ql-snow {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 }
 .ql-editor {
@@ -27,6 +29,7 @@
   img {
     max-width: 100%;
     max-height: 500px;
+    padding: 10px 0;
   }
   width: 48%;
   padding: 20px;
@@ -47,6 +50,9 @@
 .editor {
   height: 80vh;
   width: 48%;
+  img{
+    padding: 10px 0;
+  }
 }
 p{
     padding: 0;
@@ -56,4 +62,16 @@ p{
     width: 800px;
     height: 400px;
     padding: 10px 0; 
+}
+.ql-align-right{
+    text-align: right;
+}
+.ql-align-left{
+    text-align: left;
+}
+.ql-align-center{
+    text-align: center;
+}
+.ql-align-justify{
+    text-align: justify;
 }
