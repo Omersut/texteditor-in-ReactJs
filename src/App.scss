@@ -1,0 +1,50 @@
+.App {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ql-toolbar {
+  &.ql-snow {
+  }
+}
+.ql-editor {
+  img {
+    max-width: 100%;
+    max-height: 500px;
+  }
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: transparent; /* or add it to the track */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+}
+.print {
+  img {
+    max-width: 100%;
+    max-height: 500px;
+  }
+  width: 48%;
+  padding: 20px;
+  overflow: auto;
+  height: 80vh;
+  border: 1px solid  rgb(196, 196, 196);
+  border-radius: 8px;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: transparent; /* or add it to the track */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+}
+.editor {
+  height: 80vh;
+  width: 48%;
+}

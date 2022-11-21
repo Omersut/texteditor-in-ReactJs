@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-
+import "./App.scss";
 import { useQuill } from "react-quilljs";
-
 import "quill/dist/quill.snow.css"; 
 
 export default () => {
-  const { quill, quillRef } = useQuill();
+  const { quill, quillRef } = useQuill('snow');
   const [value, setValue] = React.useState();
 
  useEffect(() => {
@@ -18,11 +17,11 @@ export default () => {
  console.log(value); // Get value using state
 
   return (
-   <div style={{display: "flex", justifyContent: "space-around"}}>
-     <div style={{ height: "80vh" }}>
-      <div ref={quillRef} />
+   <div className="App">
+    <div className="editor">
+      <div ref={quillRef}  />
     </div>
-    <div dangerouslySetInnerHTML={{ __html: value }}></div>
+    <div className="print" dangerouslySetInnerHTML={{ __html: value }}></div>
 
    </div>
   );
